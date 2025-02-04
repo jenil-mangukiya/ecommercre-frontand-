@@ -32,6 +32,7 @@ function Cart() {
 
   const navigate = useNavigate();
   const location = useLocation();
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
 
   const[cid, setcid] = useState([]);
   useEffect(() => {
@@ -40,7 +41,7 @@ function Cart() {
       navigate("/login", { state: { path: location.pathname } });
     }
     axios
-      .get(`http://localhost:5000/cart/getalldataofcart/${id}`, {
+      .get(`${BASE_URL}/cart/getalldataofcart/${id}`, {
       })
       .then(async function (response) {
         console.log(response.data.addtocartdata.user.product);
@@ -63,7 +64,7 @@ function Cart() {
     console.log(uId);
     console.log(a);
     axios
-      .delete(`http://localhost:5000/cart/remove-cart-item?user_id=${uId}&product_id=${a}`, {
+      .delete(`${BASE_URL}/cart/remove-cart-item?user_id=${uId}&product_id=${a}`, {
 
       })
       .then(function (response) {
@@ -112,7 +113,7 @@ async function displayRazorpay() {
   }
 
   // creating a new order
-  const result = await axios.post(`http://localhost:5000/checkout/createorderforallcart/${cid}`)
+  const result = await axios.post(`${BASE_URL}/checkout/createorderforallcart/${cid}`)
   if (!result) {
       alert("Server error. Are you online?");
       return;

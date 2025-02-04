@@ -17,12 +17,13 @@ function User_reg() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [number, setnumber] = useState("");
-
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  // const BASE_URL = process.env.REACT_APP_BASE_URL;
   const registerUser = (e) => {
     e.preventDefault();
     console.log(email);
     axios
-      .post("http://localhost:5000/users/sign-up", {
+      .post(`${BASE_URL}/users/sign-up`, {
         firstName: firstname,
         lastName: lastname,
         email: email,

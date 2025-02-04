@@ -15,11 +15,12 @@ function Cheakout(props) {
     const [delmethod, setdelmethod] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
+    const BASE_URL = process.env.REACT_APP_BASE_URL;
     const adddetails = (e) => {
         e.preventDefault();
         axios
             .post(
-                `http://localhost:5000/checkout/add-detail-of-checkout?userId=${sessionStorage.getItem("userid")}&cartId=${sessionStorage.getItem("cartid")}`, {
+                `${BASE_URL}/checkout/add-detail-of-checkout?userId=${sessionStorage.getItem("userid")}&cartId=${sessionStorage.getItem("cartid")}`, {
                 name: name,
                 addressone: addone,
                 addresstwo: addtwo,

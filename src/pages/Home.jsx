@@ -10,9 +10,10 @@ import Getproduct from "../components/Getproduct";
 
 const Home = () => {
     const [data, setData] = useState([]);
+    const BASE_URL = process.env.REACT_APP_BASE_URL;
     useEffect(() =>{
         axios
-        .get("http://localhost:5000/admin/getallproduct")
+        .get(`${BASE_URL}/admin/getallproduct`)
         .then(function (response) {
           // handle success
           console.log(response.data.productData);

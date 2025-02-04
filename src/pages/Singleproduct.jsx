@@ -18,11 +18,12 @@ function Singleproduct() {
 
   const navigate = useNavigate()
   const location = useLocation();
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
 
   useEffect(() => {
     if (productId) {
       axios
-        .get(`http://localhost:5000/admin/getsingleproduct/${productId}`)
+        .get(`${BASE_URL}/admin/getsingleproduct/${productId}`)
         .then(function (response) {
           const data = response.data.data;
           console.log(data);
@@ -49,7 +50,7 @@ function Singleproduct() {
     else {
       // console.log(uId);
       // console.log(pId);
-      axios.post(`http://localhost:5000/cart/addtocart?userId=${uId}&productId=${pId}`, {
+      axios.post(`${BASE_URL}/cart/addtocart?userId=${uId}&productId=${pId}`, {
       })
         .then(function (response) {
           console.log(response);

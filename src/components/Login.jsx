@@ -8,7 +8,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('')
   const navigate = useNavigate();
-
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 
   const userAuth = (e) => {
@@ -17,7 +17,7 @@ const Login = () => {
 
       console.log(email+"...."+password);
       axios
-      .post("http://localhost:5000/users/login", {
+      .post(`${BASE_URL}/users/login`, {
        
         email: email,
         password: password,
