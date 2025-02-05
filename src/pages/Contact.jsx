@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <Header />
-           
+
             <section>
                 <div className="contact-seo mt-2 mb-2">
                     <div className="container">
@@ -32,8 +32,8 @@ const Contact = () => {
                 <div className="map-seo">
                     <div className="row">
                         <div className="col mb-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44790.54461094319!2d72.83633531679183!3d21.210581118309914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f02397941bd%3A0xf103a23101102563!2sVarachha%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1717477910322!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{ width: "100%", height: "500px" }}></iframe>
-
+                           
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212.79319540536974!2d72.86151452178298!3d21.21233527559178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f050dafba93%3A0x10263419fa2972d2!2s52%2C%20Navi%20Shakti%20Vijay%20Society%2C%20Panchdev%20Society%2C%20Mohan%20Nagar%2C%20Varachha%2C%20Surat%2C%20Gujarat%20394530!5e1!3m2!1sen!2sin!4v1738753874352!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style={{ width: "100%", height: "500px" }}></iframe>
                         </div>
 
                     </div>
@@ -52,21 +52,23 @@ const Contact = () => {
                                         <li className="fs-2"><FaHome /></li>
                                         <h4 className="address">Address</h4>
 
-                                        <p className="strret">123 Main Street, Anytown, CA 12345 – USA</p>
+                                        <p className="strret">
+                                        A-52, Navi Shakti Vijay Society, Panchdev Society, Mohan Nagar, Varachha, Surat, Gujarat 394530, India.
+                                        </p>
 
 
                                         <li className="fs-2"><FaPhoneAlt /></li>
                                         <h4 className="address">Phone</h4>
 
-                                        <p>Mobile: (08) 123 456 789<br />
-                                            Hotline: 1009 678 456</p>
+                                        <p>Mobile: 98247 43819<br />
+                                            Mobile:  97264 86287</p>
 
                                         <li className="fs-2"><MdOutlineEmail /></li>
                                         <h4 className="address">Email</h4>
                                         <p>Info@mahirastone.com
-                                        <br />
-                                        Support@mahirastone.com <br />
-                                        Contact@mahirastone.com</p>
+                                            <br />
+                                            Support@mahirastone.com <br />
+                                            Contact@mahirastone.com</p>
 
                                     </ul>
 
@@ -87,13 +89,13 @@ const Contact = () => {
 
                                         <label className="mb-1">Subject</label><br />
                                         <input type=" text" ></input><br />
-                                        
-                                        <label className="mb-1">Your Message</label><br />
-                                        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"  style={{width:"100%"}}></textarea ></span>
 
-                                            <button className="send mt-5 border-0 py-2 px-5  fs-5 rounded-5">Send</button>
+                                        <label className="mb-1">Your Message</label><br />
+                                        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" style={{ width: "100%" }}></textarea ></span>
+
+                                        <button className="send mt-5 border-0 py-2 px-5  fs-5 rounded-5">Send</button>
                                     </div>
-                                   
+
                                 </form>
 
                             </div>
@@ -104,7 +106,7 @@ const Contact = () => {
 
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }
