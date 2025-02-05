@@ -25,7 +25,7 @@ const Footer = () => {
                                     </ul>
                                     <div className="cta-text">
                                         <h4>Call us</h4>
-                                        <span>9876543210 0</span>
+                                        <span>98247 43819</span>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                                     </ul>
                                     <div className="cta-text">
                                         <h4>Mail us</h4>
-                                        <span>mail@info.com</span>
+                                        <span>mahirastone403@gmail.com</span>
                                     </div>
                                 </div>
                             </div>
