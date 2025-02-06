@@ -62,8 +62,8 @@ const Footer = () => {
                                     <div className="footer-widget-heading">
                                         <h3>Useful Links</h3>
                                     </div>
-                                    <ul>
-                                        <div>
+                                    <ul className="footer-links">
+                                        {/* <div> */}
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">about</a></li>
                                             <li><a href="#">services</a></li>
@@ -74,7 +74,7 @@ const Footer = () => {
                                             <li><a href="#">Expert Team</a></li>
                                             <li><a href="#">Contact us</a></li>
                                             <li><a href="#">Latest News</a></li>
-                                        </div>
+                                        {/* </div> */}
 
                                     </ul>
                                 </div>
