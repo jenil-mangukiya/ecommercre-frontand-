@@ -141,7 +141,7 @@ const Header = () => {
                                 </Offcanvas>
                             </div>
                             <div className='logo col-4  d-flex  justify-content-center align-content-center  logo'>
-                            <img src={require("../img/New-Project-2.png")} style={{ width: "100px", height:"80px" }} alt=""></img>
+                            <img src={require("../img/logo.png")} style={{ width: "100px", height:"80px" }} alt=""></img>
                             </div>
                             <div className='col-md-4 col-6 d-flex justify-content-end align-items-center fs-4'>
                                 <p className='ms-3'><CiSearch /></p>
