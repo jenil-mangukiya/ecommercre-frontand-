@@ -62,28 +62,7 @@ const Home = () => {
             </section >
 
 
-            {/* <section>
-                <div className="card-2-seo">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col  col-12 col-lg-3 col-md-6 ">
-                                <Card proimg={require("../img/tg_1.jpg")} title="Earrings" price="$100.00" />
-                            </div>
-                            <div className="col  col-12 col-lg-3 col-md-6 ">
-                                <Card proimg={require("../img/tg_2.jpg")} title="Necklaces" price="$100.00" />
-                            </div>
-                            <div className="col  col-12 col-lg-3 col-md-6 ">
-                                <Card proimg={require("../img/tg_3.jpg")} title="Rings"  price="$100.00"/>
-
-                            </div>
-                            <div className="col  col-12 col-lg-3 col-md-6 ">
-                                <Card proimg={require("../img/tg_4.jpg")} title="Bracelets"  price="$100.00"/>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+         
 
             {/* ---------------------------------------- */}
 
