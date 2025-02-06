@@ -89,9 +89,9 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="top-header-des col-4  d-xl-block d-none">
-                                <p className='d-flex justify-content-center '>
+                                {/* <p className='d-flex justify-content-center '>
                                     Free metro delivery* Sign Up for $30 off your order!
-                                </p>
+                                </p> */}
                             </div>
                             <div className='d-md-block d-none col-xl-4  col-md-6'>
                                 <div className="help-sec d-flex justify-content-end">
