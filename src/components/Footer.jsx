@@ -14,7 +14,9 @@ const Footer = () => {
                                     </ul>
                                     <div className="cta-text">
                                         <h4>Find us</h4>
-                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                        <span>A-52 Mohan Nagar, Surat Gujrat
+                                            India
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -47,11 +49,11 @@ const Footer = () => {
                             <div className="col-xl-4 col-lg-4 mb-50">
                                 <div className="footer-widget">
                                     <div className="footer-logo">
-                                    <img src={require("../img/New-Project-2.png")} style={{ width: "100px", height:"80px" }} alt=""></img>
+                                        <img src={require("../img/New-Project-2.png")} style={{ width: "100px", height: "80px" }} alt=""></img>
                                     </div>
                                     <div className="footer-text">
-                                        <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                            elit,Lorem ipsum dolor sit amet.</p>
+                                        <p>Mahirastone is an Indian company that was founded in 2011 and has its headquarters and manufacturing hub in Surat. Mahirastone is a Natural Diamond Manufacturer, setting standards not just for the sheer size of its activities, but also for product quality, precision, and diversity, technological integration, production, and broader social responsibility.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

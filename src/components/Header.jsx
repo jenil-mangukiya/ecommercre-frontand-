@@ -81,10 +81,10 @@ const Header = () => {
                             <div className='d-md-block d-none col-xl-4  col-md-6'>
                                 <div className="contact-sec d-flex">
                                     <div className="top-header-phone me-2">
-                                        <FaPhone className="t-icon" /> +0123-456-7899
+                                        <FaPhone className="t-icon" /> 98247 43819
                                     </div>
                                     <div className="top-header-email">
-                                        <SlEnvolope className="t-icon" /> demo@demo.com
+                                        <SlEnvolope className="t-icon" />mahirastone403@gmail.com
                                     </div>
                                 </div>
                             </div>
