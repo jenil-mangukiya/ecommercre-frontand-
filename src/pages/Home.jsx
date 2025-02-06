@@ -11,21 +11,21 @@ import Getproduct from "../components/Getproduct";
 const Home = () => {
     const [data, setData] = useState([]);
     const BASE_URL = process.env.REACT_APP_BASE_URL;
-    useEffect(() =>{
+    useEffect(() => {
         axios
-        .get(`${BASE_URL}/admin/getallproduct`)
-        .then(function (response) {
-          // handle success
-          console.log(response.data.productData);
-        //   setData(response.data.productData);
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        });
+            .get(`${BASE_URL}/admin/getallproduct`)
+            .then(function (response) {
+                // handle success
+                console.log(response.data.productData);
+                //   setData(response.data.productData);
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            });
 
 
-   
+
     })
 
     return (
@@ -62,7 +62,7 @@ const Home = () => {
             </section >
 
 
-         
+
 
             {/* ---------------------------------------- */}
 
@@ -105,7 +105,7 @@ const Home = () => {
                 </div>
             </section>
 
-          <Getproduct/>
+            <Getproduct />
 
 
 
@@ -147,22 +147,20 @@ const Home = () => {
                 </div>
             </section>
             {/* ------------------------------------------------------ */}
-            <section >
-                <div className="from-seo-2">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col col-lg-4  col-md-4">
-                                <Servic fromig={require("../img/nek_1.jpg")} date="April 25, 2018" gldname="Quisque egestas" />
-                            </div>
-                            <div className="colcol-lg-4  col-md-4">
-                                <Servic fromig={require("../img/nek_2.jpg")} date="April 24, 2018" gldname="Post with Gallery" />
-                            </div>
-                            <div className="colcol-lg-4  col-md-4">
-                                <Servic fromig={require("../img/nek_3.jpg")} date="April 24, 2018" gldname="Maecenas ultricies" />
-                            </div>
-
+          
+           
+            <section className="service-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-4 col-sm-12">
+                            <Servic fromig={require("../img/nek_1.jpg")} date="April 25, 2018" gldname="Quisque egestas" />
                         </div>
-
+                        <div className="col-lg-4 col-md-4 col-sm-12">
+                            <Servic fromig={require("../img/nek_2.jpg")} date="April 24, 2018" gldname="Post with Gallery" />
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12">
+                            <Servic fromig={require("../img/nek_3.jpg")} date="April 24, 2018" gldname="Maecenas ultricies" />
+                        </div>
                     </div>
                 </div>
             </section>
