@@ -155,7 +155,21 @@ ul {
 /* ==================================================================================================================================== */
                                                         /* card css */
 /* 
+.accordion-header > button {
+  background-color: #343a40;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+}
 
+.nav-sidebar .nav-item > .accordion-item > .nav-link {
+  position: relative;
+}
+/* .nav-sidebar>.nav-link>p>.right{
+  position: absolute;
+  right: 1rem;
+  top: .7rem;
+} */
 
 .ra {
   padding-left: 95px;
@@ -177,7 +191,7 @@ ul {
   box-shadow: 2px 2px 2px rgb(234, 233, 233);
   height: 485px;
   width: 330px;
-
+  /* flex-wrap: wrap; */
 }
 
 .products-fonts {
@@ -210,7 +224,7 @@ a {
   display: inline-block;
   padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   font-size: 7px;
- 
+  /* font-weight: var(--bs-badge-font-weight); */
   line-height: 1;
   color: var(--bs-badge-color);
   text-align: center;
@@ -254,7 +268,7 @@ a {
   padding: 10px;
 }
 .main-items {
-  
+  /* margin-left: 20px; */
   margin: 20px 0px 20px 20px;
 }
 .check-product-type {
@@ -271,7 +285,7 @@ a {
   width: 300px;
   height: 236px;
   border-radius: 10px 10px 0px 0px;
- 
+  /* margin: 5px; */
 }
 .inner-image {
   position: absolute;
@@ -359,7 +373,7 @@ a {
   top: 100%;
   left: 16%;
   visibility: hidden;
- 
+  /* transition: 1s; */
 }
 .QuickAdd a {
   text-decoration: none;
@@ -384,12 +398,12 @@ a {
   font-size: 20px;
   font-weight: 500;
   margin-left: 0px;
-
+  /* color: red; */
 }
 .product-price .second-span {
   font-size: 16px;
   font-weight: 600;
-
+  /* opacity: 0.7; */
   margin-left: 0px;
   margin: 0px 20px;
   color: rgb(255, 88, 11);
@@ -402,12 +416,12 @@ a {
   padding: 7px 15px;
   border: none;
   border: 1px solid #fff;
-  
+  /* background-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,45,219,1) 49%, rgba(0,212,255,1) 100%); */
   text-transform: uppercase;
   color: #ffffff;
   transition: 0.3s;
   background: rgb(231, 148, 46);
-
+  /* Fbackground: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 .change-card:hover {
   background-color: #fff;
@@ -451,117 +465,6 @@ a {
   border: 1px solid #f14805;
   margin-right: 10px;
 } */
-
-@media screen and (max-width: 1024px) {
-  .brd {
-    width: 300px;
-    height: auto;
-  }
-
-  .mycontainer,
-  .mycontainer1 {
-    width: 100%;
-    margin: auto;
-  }
-
-  .check-item {
-    width: 100%;
-  }
-
-  .outer-image {
-    width: 250px;
-  }
-
-  .outer-image img,
-  .inner-image {
-    width: 250px;
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .brd {
-    width: 280px;
-  }
-
-  .mycontainer1 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .product-d {
-    width: 100%;
-  }
-
-  .outer-image {
-    width: 220px;
-  }
-
-  .outer-image img,
-  .inner-image {
-    width: 220px;
-    height: 180px;
-  }
-
-  .QuickAdd {
-    top: 120%;
-  }
-
-  .mainthree-icon {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .brd {
-    width: 250px;
-  }
-
-  .outer-image {
-    width: 200px;
-  }
-
-  .outer-image img,
-  .inner-image {
-    width: 200px;
-    height: 160px;
-  }
-
-  .products-fonts h3 {
-    font-size: 18px;
-  }
-
-  .product-price .first-span {
-    font-size: 18px;
-  }
-
-  .product-price .second-span {
-    font-size: 14px;
-  }
-
-  .change-card {
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-
-  .QuickAdd {
-    top: 110%;
-  }
-
-  .mainthree-icon {
-    width: 25px;
-    height: 25px;
-    font-size: 16px;
-  }
-
-  .edit,
-  .dili {
-    font-size: 16px;
-    padding: 8px;
-  }
-}
 
 /* ============================================================================================================================== */
                                                   /* sinleproduct css */
