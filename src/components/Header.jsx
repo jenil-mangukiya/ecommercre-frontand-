@@ -27,7 +27,7 @@ const Header = () => {
     const location = useLocation();
     const [show, setShow] = useState(false);
     const [in_out, setin_out] = useState('');
-    const [uId ,setuId] = useState('');
+    const [uId, setuId] = useState('');
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -57,10 +57,10 @@ const Header = () => {
 
     const hi = (() => {
 
-        if(!sessionStorage.getItem('userid')){
-            navigate("/login",{state:{path : location.pathname}})
+        if (!sessionStorage.getItem('userid')) {
+            navigate("/login", { state: { path: location.pathname } })
         }
-        else{
+        else {
 
             navigate(`/cart/${uId}`)
         }
@@ -72,9 +72,9 @@ const Header = () => {
         <>
 
 
-{/* ============================================================================================================================================== */}
- 
-<header>
+            {/* ============================================================================================================================================== */}
+
+            <header>
                 <div className="top-header d-md-block d-none">
                     <div className="container">
                         <div className="top-header-main row align-content-center">
@@ -114,7 +114,7 @@ const Header = () => {
                                     <li className='me-3'><Link className='nav-menus' to="/">Home</Link></li>
                                     <li className='me-3'><Link className='nav-menus' to="/shop">shop</Link></li>
                                     <li className='me-3'><Link className='nav-menus' to="/Product">products</Link></li>
-                                
+
                                     <li className='me-3'><Link className='nav-menus' to="/about-us">About</Link></li>
                                     <li className='me-3'><Link className='nav-menus' to="/contact">Contect</Link></li>
                                 </ul>
@@ -133,7 +133,7 @@ const Header = () => {
                                             <li className='py-3 px-2'><Link className='nav-menus' to="/">Home</Link></li>
                                             <li className='py-3 px-2'><Link className='nav-menus' to="/shop">shop</Link></li>
                                             <li className='py-3 px-2'><Link className='nav-menus' to="/products">products</Link></li>
-                                           
+
                                             <li className='py-3 px-2'><Link className='nav-menus' to="/about-us">About</Link></li>
                                             <li className='py-3 px-2'><Link className='nav-menus' to="/contact">Contect</Link></li>
                                         </ul>
@@ -141,7 +141,7 @@ const Header = () => {
                                 </Offcanvas>
                             </div>
                             <div className='logo col-4  d-flex  justify-content-center align-content-center  logo'>
-                            <img src={require("../img/logo.png")} style={{ width: "100px", height:"80px" }} alt=""></img>
+                                <img src={require("../img/logo.png")} style={{ width: "100px", height: "80px" }} alt=""></img>
                             </div>
                             <div className='col-md-4 col-6 d-flex justify-content-end align-items-center fs-4'>
                                 <p className='ms-3'><CiSearch /></p>
@@ -154,7 +154,7 @@ const Header = () => {
                 </div>
             </header >
 
- 
+
         </>
     )
 }
