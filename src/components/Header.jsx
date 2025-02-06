@@ -114,7 +114,7 @@ const Header = () => {
                                     <li className='me-3'><Link className='nav-menus' to="/">Home</Link></li>
                                     <li className='me-3'><Link className='nav-menus' to="/shop">shop</Link></li>
                                     <li className='me-3'><Link className='nav-menus' to="/Product">products</Link></li>
-                                    {/* <li className='me-3'><Link className='nav-menus' to="/Blogs">Blogs</Link></li> */}
+                                
                                     <li className='me-3'><Link className='nav-menus' to="/about-us">About</Link></li>
                                     <li className='me-3'><Link className='nav-menus' to="/contact">Contect</Link></li>
                                 </ul>
@@ -131,11 +131,11 @@ const Header = () => {
                                     <Offcanvas.Body>
                                         <ul>
                                             <li className='py-3 px-2'><Link className='nav-menus' to="/">Home</Link></li>
-                                            <li className='py-3 px-2'><Link className='nav-menus' to="/Shop">shop</Link></li>
-                                            <li className='py-3 px-2'><Link className='nav-menus' to="/Products">products</Link></li>
-                                            <li className='py-3 px-2'><Link className='nav-menus' to="/Blogs">Blogs</Link></li>
-                                            <li className='py-3 px-2'><Link className='nav-menus' to="/Details">About</Link></li>
-                                            <li className='py-3 px-2'><Link className='nav-menus' to="/Contect">Contect</Link></li>
+                                            <li className='py-3 px-2'><Link className='nav-menus' to="/shop">shop</Link></li>
+                                            <li className='py-3 px-2'><Link className='nav-menus' to="/products">products</Link></li>
+                                            {/* <li className='py-3 px-2'><Link className='nav-menus' to="/Blogs">Blogs</Link></li> */}
+                                            <li className='py-3 px-2'><Link className='nav-menus' to="/about-us">About</Link></li>
+                                            <li className='py-3 px-2'><Link className='nav-menus' to="/contact">Contect</Link></li>
                                         </ul>
                                     </Offcanvas.Body>
                                 </Offcanvas>
