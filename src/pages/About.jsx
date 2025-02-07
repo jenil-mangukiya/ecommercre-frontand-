@@ -33,7 +33,7 @@ const About = () => {
                                 <div className="digital-img mt-0 mb-4">
                                     {/* <img src={require("../img/home_1.jpg")} alt="" style={{ width: "100%" }} ></img>
                                      */}
-                                     <img src={require("../img/FDA91OBA-5O45-43F1-B222-OE594C5B701F.JPEG")} alt="" />
+                                     <img src={require("../img/about-us.jpg")} alt="" />
                                 </div>
                                 <div className="digital-info-2  text-center">
                                     <h3 className=" are-a-digital  mt-5">We Are A Digital Agency Focused On Delivering <br />Content And Utility User-Experiences. </h3>
