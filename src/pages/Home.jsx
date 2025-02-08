@@ -44,11 +44,24 @@ const Home = () => {
 
                             <div className="col col-lg-6 info-1  ">
                                 <h2 className="About-Us text-secondary">About Us</h2>
-                                <p className="ti-1 my-4"><b>Founded In 1986, I.D. Jewelry, LLC, A Family Owned & Operated Business Has Become A House-Hold Name In States All Over The USA As Well As Countries All Over The World.</b></p>
+                                <p className="ti-1 my-4"><b>
+                                    Mahirastone is an Indian company that was founded in 2011 and has its headquarters and manufacturing hub in Surat. Mahirastone is a Natural Diamond Manufacturer, setting standards not just for the sheer size of its activities, but also for product quality, precision, and diversity, technological integration, production, and broader social responsibility.
+                                </b></p>
 
-                                <p className="ti-2 my-4">For those that rather the full immersion of the in store experience we welcome your company and look forward to meeting you face to face. Being located in the 47 street diamond district, known to be the largest diamond.</p>
+                                <p className="ti-2 my-4">Our product offers, too, bear the Mahirastone stamp, with an emphasis on both breadth and beauty.
+                                </p>
 
-                                <p className="ti-3 my-4">Based in the heart of New York’s Diamond District, also known as the NYC diamond district, I. D. Jewelry has some of the most competitively priced in the market. It is our goal to supply our clients.</p>
+                                <p className="ti-3 my-4">We provide clients with an unrivalled selection of items in round, pears, marquise, princess, emerald, cushion, and heart shaped diamonds. A wide range of sizes, grades, and packaging are available. A mix of certified and non-certified products. Sizes ranging from 1 carat to 3 carats. There are several certification choices. Extensive stockpiles and a wide range of varied packages
+                                </p>
+                                <p className="ti-4 my-4">
+                                    The rough diamonds used are 100% natural and obtained solely from ethical sources. Manufacturing takes place under rigorous supervision at our cutting-edge manufacturing facility.
+
+                                </p>
+                                <p className="ti-5 my-4">
+
+                                    Mahirastone success may be attributed to its ethical business methods as well as meeting the needs of its consumers on demand.
+
+                                </p>
                             </div>
                             <div className="new-product   text-center mt-5">
                                 <h3 className="new-arriv ">New Arrivals</h3>
@@ -88,7 +101,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
+
             {/* -------------------------------our- productr--------------- */}
             <section>
                 <div className="our-seo-pro">
@@ -148,8 +161,8 @@ const Home = () => {
                 </div>
             </section>
             {/* ------------------------------------------------------ */}
-          
-           
+
+
             <section className="service-section">
                 <div className="container">
                     <div className="row">
