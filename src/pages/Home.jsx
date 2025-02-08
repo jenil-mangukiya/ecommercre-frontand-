@@ -88,6 +88,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Servic/>
             {/* -------------------------------our- productr--------------- */}
             <section>
                 <div className="our-seo-pro">

@@ -126,6 +126,39 @@ li>a:hover{
     transform: scale(1.2);
     transition: 0.2s;
 }
+
+.service-item {
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  
+  .image-container:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .image-container:hover .default-img {
+    opacity: 0;
+  }
+  
 /* -----------------------end--------------- */
 /* ----------------------clint-testimonisal-seo---------------------- */
 .clint-testimonisal-seo{
