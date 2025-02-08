@@ -70,25 +70,40 @@ const Home = () => {
                 <div className="servic-2-seo">
                     <div className="container">
                         <div className="row my-5">
-                            <div className="col  col-12 col-lg-3 col-md-6 mt-3 ">
-                                <Servic seimg={require("../img/ba_1.jpg")} sename="Earrings" />
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic
+                                    seimg={require("../img/ba_1.jpg")}
+                                    hoverImg={require("../img/hover_1.jpg")}
+                                    sename="Earrings"
+                                />
                             </div>
-                            <div className="col  col-12 col-lg-3 col-md-6  mt-3">
-                                <Servic seimg={require("../img/ba_2.jpg")} sename="Necklaces" />
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic
+                                    seimg={require("../img/ba_2.jpg")}
+                                    hoverImg={require("../img/hover_2.jpg")}
+                                    sename="Necklaces"
+                                />
                             </div>
-                            <div className="col  col-12 col-lg-3 col-md-6   mt-3 ">
-                                <Servic seimg={require("../img/ba_3.jpg")} sename="Rings" />
-
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic
+                                    seimg={require("../img/ba_3.jpg")}
+                                    hoverImg={require("../img/hover_3.jpg")}
+                                    sename="Rings"
+                                />
                             </div>
-                            <div className="col  col-12 col-lg-3 col-md-6   mt-3">
-                                <Servic seimg={require("../img/ba_4.jpg")} sename="Bracelets" />
-
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic
+                                    seimg={require("../img/ba_4.jpg")}
+                                    hoverImg={require("../img/hover_4.jpg")}
+                                    sename="Bracelets"
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <Servic/>
+
+
             {/* -------------------------------our- productr--------------- */}
             <section>
                 <div className="our-seo-pro">
@@ -148,8 +163,8 @@ const Home = () => {
                 </div>
             </section>
             {/* ------------------------------------------------------ */}
-          
-           
+
+
             <section className="service-section">
                 <div className="container">
                     <div className="row">
