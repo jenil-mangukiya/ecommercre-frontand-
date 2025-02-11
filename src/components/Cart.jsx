@@ -126,7 +126,7 @@ async function displayRazorpay() {
   console.log(amount);
 
   const options = {
-      key: "rzp_test_PXdMbxpoZTN9Dz", // Enter the Key ID generated from the Dashboard
+      key: "rzp_test_8KwQdyz1ygkX8x", // Enter the Key ID generated from the Dashboard
       amount: amount.toString(),
       currency: currency,
       name: "Soumya Corp.",
