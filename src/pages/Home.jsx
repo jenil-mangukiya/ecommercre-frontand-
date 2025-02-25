@@ -62,7 +62,7 @@ const Home = () => {
                                     Mahirastone success may be attributed to its ethical business methods as well as meeting the needs of its consumers on demand.
 
                                 </p>
-                                <button>About US</button>
+                             
                             </div>
                             <div className="new-product   text-center mt-5">
                                 <h3 className="new-arriv ">New Arrivals</h3>
