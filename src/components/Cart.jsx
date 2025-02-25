@@ -143,9 +143,9 @@ async function displayRazorpay() {
 
           console.log(data);
 
-          // const result = await axios.post("http://localhost:5000/payment/success", data);
+          const result = await axios.post(`${BASE_URL}/payment/success`, data);
 
-          // alert(result.data.msg);
+          alert(result.data.msg);
       },
       prefill: {
           name: "Soumya Dey",
