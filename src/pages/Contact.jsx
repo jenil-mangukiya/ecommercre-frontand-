@@ -65,10 +65,11 @@ const Contact = () => {
 
                                         <li className="fs-2"><MdOutlineEmail /></li>
                                         <h4 className="address">Email</h4>
-                                        <p>Info@mahirastone.com
+                                        <p>Info@mahirastone.com<a href="mailto:someone@example.com">Send email</a>
                                             <br />
+                                            <a href="mailto:someone@example.com">Send email</a>
                                             Support@mahirastone.com <br />
-                                            Contact@mahirastone.com</p>
+                                            <a href="mailto:someone@example.com">Send email</a>Contact@mahirastone.com</p>
 
                                     </ul>
 
