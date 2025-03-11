@@ -110,7 +110,7 @@ li>a:hover{
 /* ----------------------new Arrivale----------- */
 
 
-.Ben{
+/* .Ben{
     color: rgb(150, 148, 148);
 }
 .se-nam{
@@ -125,8 +125,74 @@ li>a:hover{
 .ig-sev>img:hover{
     transform: scale(1.2);
     transition: 0.2s;
-}
+} */
+/* ==================== */
 
+/* Slider Container */
+.slider-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Product Card */
+  .product-card {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image Styling */
+  .product-card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain; /* Ensures the entire image is visible */
+    border-radius: 8px;
+    background-color: #f8f8f8; /* Background color for images with transparent areas */
+  }
+  
+  /* Product Name */
+  .product-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  /* Swiper Styles */
+  .mySwiper {
+    padding-bottom: 30px; /* Space for pagination */
+  }
+  
+  .swiper-pagination {
+    position: relative;
+    bottom: 0;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #333 !important;
+    opacity: 0.7;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #ff6f61 !important;
+    opacity: 1;
+  }
+  
 
 /* -----------------------end--------------- */
 /* ----------------------clint-testimonisal-seo---------------------- */

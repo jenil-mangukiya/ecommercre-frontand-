@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Carosal from "../components/Carosal";
 import Footer from "../components/Footer";
@@ -7,7 +6,10 @@ import Servic from "../components/Servic";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Getproduct from "../components/Getproduct";
-
+import NewArrivalsSlider from "../components/NewArrivalsSlider";
+import BeforeImage from "../img/abu_1.jpg"; // Replace with actual "before" image
+import AfterImage from "../img/abu_1.jpg"; // Replace with actual "after" image
+import ReactCompareImage from "react-compare-image";
 const Home = () => {
     const [data, setData] = useState([]);
     const BASE_URL = process.env.REACT_APP_BASE_URL;
@@ -32,76 +34,84 @@ const Home = () => {
         <>
             <Header />
             <Carosal />
-            <section>
-                <div className="para-1">
-                    <div className="container">
-                        <div className="row my-5">
 
-                            <div className="col-lg-6 col-12 abc">
-                                <img src={require("../img/abu_1.jpg")} alt="" width={{ width: "100%" }}></img>
+            <section className="about-us-section">
+      <div className="container">
+        <div className="row align-items-center my-5">
+          {/* Before-After Hover Effect */}
+          <div className="col-lg-6 col-12">
+            <div className="hover-effect">
+              <img src={BeforeImage} alt="Before" className="before-img" />
+              <img src={AfterImage} alt="After" className="after-img" />
+            </div>
+          </div>
 
-                            </div>
-
-                            <div className="col col-lg-6 info-1  ">
-                                <h2 className="About-Us text-secondary">About Us</h2>
-                                <p className="ti-1 my-4"><b>
-                                    Mahirastone is an Indian company that was founded in 2011 and has its headquarters and manufacturing hub in Surat. Mahirastone is a Natural Diamond Manufacturer, setting standards not just for the sheer size of its activities, but also for product quality, precision, and diversity, technological integration, production, and broader social responsibility.
-                                </b></p>
-
-                                <p className="ti-2 my-4">Our product offers, too, bear the Mahirastone stamp, with an emphasis on both breadth and beauty.
-                                </p>
-
-                                <p className="ti-3 my-4">We provide clients with an unrivalled selection of items in round, pears, marquise, princess, emerald, cushion, and heart shaped diamonds. A wide range of sizes, grades, and packaging are available. A mix of certified and non-certified products. Sizes ranging from 1 carat to 3 carats. There are several certification choices. Extensive stockpiles and a wide range of varied packages
-                                </p>
-                                <p className="ti-4 my-4">
-                                    The rough diamonds used are 100% natural and obtained solely from ethical sources. Manufacturing takes place under rigorous supervision at our cutting-edge manufacturing facility.
-
-                                </p>
-                                <p className="ti-5 my-4">
-
-                                    Mahirastone success may be attributed to its ethical business methods as well as meeting the needs of its consumers on demand.
-
-                                </p>
-                             
-                            </div>
-                            <div className="new-product   text-center mt-5">
-                                <h3 className="new-arriv ">New Arrivals</h3>
-                                <span className="add-new ">Add new arrivals to weekly lineup</span>
-                                <h6 className="Ben mt-2">Bracelets  Earrings  Necklaces</h6>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section >
+          {/* Content Section */}
+          <div className="col-lg-6 col-12 about-content">
+            <h2 className="about-title text-secondary">About Us</h2>
+            <p className="about-text">
+              <b>
+                Mahirastone is an Indian company founded in 2011 with its headquarters and
+                manufacturing hub in Surat. As a Natural Diamond Manufacturer, we set
+                industry standards in quality, precision, diversity, technological integration,
+                production, and social responsibility.
+              </b>
+            </p>
+            <p className="about-text">
+              Our products emphasize both breadth and beauty, offering an unrivaled
+              selection of round, pear, marquise, princess, emerald, cushion, and heart-shaped
+              diamonds in various sizes, grades, and certifications.
+            </p>
+            <p className="about-text">
+              We ensure all rough diamonds used are 100% natural and ethically sourced,
+              with production taking place under strict supervision in our state-of-the-art
+              facility.
+            </p>
+            <p className="about-text">
+              Mahirastone’s success is driven by ethical business practices and meeting
+              customer demands with precision and efficiency.
+            </p>
+            <Link to="/about-us" className="btn btn-primary mt-4">
+              Learn More About Us
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
             {/* ---------------------------------------- */}
-
-            <section>
+            <div className="new-product   text-center mt-5">
+                <h3 className="new-arriv ">New Arrivals</h3>
+                <span className="add-new ">Add new arrivals to weekly lineup</span>
+                <h6 className="Ben mt-2">Bracelets  Earrings  Necklaces</h6>
+            </div>
+            <NewArrivalsSlider />
+            {/* <section className="new-arrivale">
                 <div className="servic-2-seo">
                     <div className="container">
                         <div className="row my-5">
-                            <div className="col  col-12 col-lg-3 col-md-6 mt-3 ">
-                                <Servic seimg={require("../img/ba_1.jpg")} sename="Earrings" />
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic seimg={require("../img/ba_1.jpg")} sename="Earrings" className="uniform-size" />
                             </div>
-                            <div className="col  col-12 col-lg-3 col-md-6  mt-3">
-                                <Servic seimg={require("../img/ba_2.jpg")} sename="Necklaces" />
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic seimg={require("../img/WhatsApp Unknown 2023-02-07 at 11.53.13/WhatsApp Image 2023-02-07 at 11.37.22 (7).jpeg")} sename="Necklaces" className="uniform-size" />
                             </div>
-                            <div className="col  col-12 col-lg-3 col-md-6   mt-3 ">
-                                <Servic seimg={require("../img/ba_3.jpg")} sename="Rings" />
-
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic seimg={require("../img/WhatsApp Unknown 2023-02-07 at 11.53.13/WhatsApp Image 2023-02-07 at 11.37.23.jpeg")} sename="Rings" className="uniform-size" />
                             </div>
-                            <div className="col  col-12 col-lg-3 col-md-6   mt-3">
-                                <Servic seimg={require("../img/ba_4.jpg")} sename="Bracelets" />
-
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic seimg={require("../img/ba_4.jpg")} sename="Bracelets" className="uniform-size" />
+                            </div>
+                            <div className="col col-12 col-lg-3 col-md-6 mt-3">
+                                <Servic seimg={require("../img/WhatsApp Unknown 2023-02-07 at 11.53.13/watch.jpg")} sename="Watch" className="uniform-size" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* -------------------------------our- productr--------------- */}
             <section>
