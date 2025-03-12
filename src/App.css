@@ -663,4 +663,279 @@ a {
                     .btn-primary:hover {
                       background-color: #0056b3;
                     }
-                    
+/* ============================== about page css ==============================  */
+
+
+
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* === About Us Section === */
+.Abut-us {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hm-ab {
+  font-size: 16px;
+  color: #777;
+}
+
+/* === Image Styling === */
+.digital-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.digital-img img:hover {
+  transform: scale(1.05);
+}
+
+/* === Diamond Offerings List === */
+ul.list-unstyled {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul.list-unstyled li {
+  padding: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.list-unstyled li:last-child {
+  border-bottom: none;
+}
+
+ul.list-unstyled i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* === Why Choose Us Section === */
+.Choose-Us-seo {
+  background: #f8f8f8;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.you-choose {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ch-info {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* === Accordion Styling === */
+.accordion-item {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.accordion-button {
+  font-size: 18px;
+}
+
+.accordion-body {
+  background: #fff;
+  color: #555;
+}
+
+/* === Client Testimonials === */
+.clit-ig-2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.clit-ig-2 img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.all-perfact {
+  font-size: 16px;
+  font-style: italic;
+  color: #666;
+}
+
+.yong-n {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* === Contact Section === */
+.container.text-center {
+  padding: 40px 0;
+  background: #f1f1f1;
+}
+
+.container.text-center h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.container.text-center p {
+  font-size: 16px;
+  color: #555;
+}
+
+.container.text-center a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container.text-center a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .Abut-us {
+      font-size: 32px;
+  }
+
+  .hm-ab {
+      font-size: 14px;
+  }
+
+  .you-choose {
+      font-size: 24px;
+  }
+
+  .accordion-button {
+      font-size: 16px;
+  }
+}
+
+/* ======================== about page css end =========================== */
+
+/* ======================== product page css ======================= */
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Product Section */
+.product-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Info */
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #222;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+/* Buy Now Button */
+.buy-now {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #d35400;
+}

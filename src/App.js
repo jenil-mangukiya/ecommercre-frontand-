@@ -21,6 +21,7 @@ import Cheakout from './components/Cheakout';
 
 
 
+
 function App() {
   return (
     <>
@@ -36,6 +37,8 @@ function App() {
         <Route path='/demo' element={<Demo1 />} />
         <Route path='/singlepro/:productId' element={<Singleproduct />} />
         <Route path='/cheakout' element={<Cheakout/>}/>
+        
+
       </Routes>
 
 

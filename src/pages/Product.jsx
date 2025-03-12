@@ -1,8 +1,11 @@
 import React from 'react'
 import Header from '../components/Header'
-import Servic from '../components/Servic'
+// import Servic from '../components/Servic'
 import Footer from '../components/Footer'
+// import Stproduct from '../data/Stproduct'
 import { Link } from 'react-router-dom'
+
+// import { Link } from 'react-router-dom'
 import Getproduct from '../components/Getproduct'
 
 function Product() {
@@ -57,7 +60,8 @@ function Product() {
 
 
            <Getproduct />
-            
+          
+     
             <Footer/>
    </>
   )
